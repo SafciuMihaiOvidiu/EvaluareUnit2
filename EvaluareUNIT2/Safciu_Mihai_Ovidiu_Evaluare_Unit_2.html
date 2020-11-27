@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Safciu_Mihai_Ovidiu_Evaluare_UNIT_2</title>
+<link rel="stylesheet" type="text/css" href="Safciu_Mihai.css">
+</head>
+<body>
+
+<h1>Mihai Ovidiu SAFCIU</h1>
+<p>Safciu.Cl.Mihai@utcluj.didatec.ro</p>
+<h2>Componente si caracteristici</h2>
+<table style="width:50%" align="right">
+  <tr>
+    <th>Denumire componenta</th>
+    <th>Producător</th>
+    <th>Parametri</th>
+  </tr>
+  <tr>
+    <td>NVIDIA GeForce RTX 1050 Ti</td>
+    <td>NVIDIA</td>
+    <td>Codename: N17P-G1;
+ Architecture: Pascal;
+ Pipelines: 768 - unified;
+ Core Speed: 1493 - 1620 (Boost);
+ MHz Memory Speed: 7000 MHz;
+ Memory Bus Width: 128 Bit;
+ Memory Type: GDDR5 Max;
+ Amount of Memory: 4096 MB;
+ Shared Memory: no;
+ DirectX: DirectX 12_1; 
+ technology: 14 nm;
+ Features: Multi-Projection, G-SYNC, Vulkan, Multi Monitor; 
+ Notebook Size: large; 
+ Date of Announcement: 03.01.2017 = 1425 days old;</td>
+  </tr>
+  <tr>
+    <td>Intel® Core™ i7-7700HQ Processor</td>
+    <td>Intel</td>
+    <td># of Cores: 4;
+ # of Threads: 8;
+ Processor Base Frequency: 2.80 GHz;
+ Max Turbo Frequency: 3.80 GHz;
+ Cache: 6 MB;
+ Bus Speed: 8 GT/s;
+ Intel® Turbo Boost Technology 2.0 Frequency‡: 3.80 GHz;
+ TDP: 45 W;
+ Configurable TDP-down: 35 W;
+</td>
+  </tr>
+  <tr>
+     <td>HyperX Fury Black 8GB Memory</td>
+     <td>HyperX</td>
+     <td>Memory Type: DDR4;
+ Capacity: 8 GB;
+ Frequency (MHz): 2400 Mhz;
+ Modules: Single channel;</td>
+  </tr> 
+</table>
+<div id="capsula"style="width:97%">
+<h3>Structura retelei</h3>
+<img src="Safciu_Mihai.png">
+<h4>Caracterisiticile conexiunii la retea</h4>
+<ul>
+<li>Adresa MAC</li>
+<li>Adresa IP</li>
+<li>Debit la download</li>
+<li>Debit la upload</li>
+</ul>  
+</div> 
+<h5 ondblclick="myFunction()";>Monitorizare Resurse</h5>
+<div id="poze"class="row">
+  <div class="column">
+    <img id="nr1" src="Safciu_Mihai1.png" width="100%">
+  </div>
+  <div class="column">
+    <img id="nr2" src="Safciu_Mihai2.png" width="100%">
+  </div>
+  <div class="column">
+    <img id="nr3" src="Safciu_Mihai3.png" width="100%">
+  </div>
+</div>
+<div id="slideshow" class="slideshow-container" style="display:none">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Safciu_Mihai1.png" width="50%">
+  <div class="text"> </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Safciu_Mihai2.png" width="50%">
+  <div class="text"> </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Safciu_Mihai3.png" width="50%">
+  <div class="text"> </div>
+</div>
+
+</div>
+
+<br>
+
+<div id="dots" style="display:none">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+function myFunction() {
+  document.getElementById("nr1").style.display = "none";
+  document.getElementById("nr2").style.display = "none";
+  document.getElementById("nr3").style.display = "none";
+  document.getElementById("slideshow").style.display = "block";
+  document.getElementById("dots").style.display= "block";
+  document.getElementById("dots").style.textAlign= "center";
+}
+var slideIndex = 0;
+showSlides();
+
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+</body>
+</html>
